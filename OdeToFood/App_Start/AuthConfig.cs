@@ -18,13 +18,13 @@ namespace OdeToFood
             //    clientId: "",
             //    clientSecret: "");
 
-            //OAuthWebSecurity.RegisterTwitterClient(
-            //    consumerKey: "",
-            //    consumerSecret: "");
+            OAuthWebSecurity.RegisterTwitterClient(
+                consumerKey: "VysJKxMfnUwB2nVf6yYFGdT7n",
+                consumerSecret: "HTNLuTBFHvCekfwtVyXiixzjLomSS9LMzXxizIgHkiLV1h3DWS");
 
-            //OAuthWebSecurity.RegisterFacebookClient(
-            //    appId: "",
-            //    appSecret: "");
+            OAuthWebSecurity.RegisterFacebookClient(
+                appId: "295732597291858",
+                appSecret: "11688580199842665fdec727f69077d7");
 
             //OAuthWebSecurity.RegisterGoogleClient();
         }

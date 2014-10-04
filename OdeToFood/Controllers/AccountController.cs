@@ -18,6 +18,7 @@ namespace OdeToFood.Controllers
     public class AccountController : Controller
     {
         //
+        private OdeToFoodDB db = new OdeToFoodDB();
         // GET: /Account/Login
 
         [AllowAnonymous]

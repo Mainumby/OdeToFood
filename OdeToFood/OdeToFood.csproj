@@ -187,11 +187,17 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201408220239261_InitialCreate.cs" />
+    <Compile Include="Migrations\201408220239261_InitialCreate.Designer.cs">
+      <DependentUpon>201408220239261_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\OdeToFoodDB.cs" />
     <Compile Include="Models\Restaurant.cs" />
@@ -309,6 +315,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Restaurant\Index.cshtml" />
+    <Content Include="Views\Restaurant\Details.cshtml" />
+    <Content Include="Views\Restaurant\Create.cshtml" />
+    <Content Include="Views\Restaurant\Edit.cshtml" />
+    <Content Include="Views\Restaurant\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -316,6 +327,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201408220239261_InitialCreate.resx">
+      <DependentUpon>201408220239261_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

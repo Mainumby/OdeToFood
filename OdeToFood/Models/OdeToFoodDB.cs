@@ -8,6 +8,10 @@ namespace OdeToFood.Models
 {
     public class OdeToFoodDB : DbContext
     {
+        public OdeToFoodDB(): base("name = CONN")
+        {
+
+        }
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<RestaurantReview> Reviews { get; set; }
     }
